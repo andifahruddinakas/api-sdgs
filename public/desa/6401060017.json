@@ -1,0 +1,114 @@
+{
+  "average": "42.92",
+  "data": [
+    {
+      "goals": 1,
+      "title": "Desa Tanpa Kemiskinan",
+      "image": "skor-sdgs-1.jpg",
+      "score": 44.32
+    },
+    {
+      "goals": 2,
+      "title": "Desa Tanpa Kelaparan",
+      "image": "skor-sdgs-2.jpg",
+      "score": 32.51
+    },
+    {
+      "goals": 3,
+      "title": "Desa Sehat dan Sejahtera",
+      "image": "skor-sdgs-3.jpg",
+      "score": 65.68
+    },
+    {
+      "goals": 4,
+      "title": "Pendidikan Desa Berkualitas",
+      "image": "skor-sdgs-4.jpg",
+      "score": 14.23
+    },
+    {
+      "goals": 5,
+      "title": "Keterlibatan Perempuan Desa",
+      "image": "skor-sdgs-5.jpg",
+      "score": 36.71
+    },
+    {
+      "goals": 6,
+      "title": "Desa Layak Air Bersih dan Sanitasi",
+      "image": "skor-sdgs-6.jpg",
+      "score": 47.76
+    },
+    {
+      "goals": 7,
+      "title": "Desa Berenergi Bersih dan Terbarukan",
+      "image": "skor-sdgs-7.jpg",
+      "score": 96.71
+    },
+    {
+      "goals": 8,
+      "title": "Pertumbuhan Ekonomi Desa Merata",
+      "image": "skor-sdgs-8.jpg",
+      "score": 50.38
+    },
+    {
+      "goals": 9,
+      "title": "Infrastruktur dan Inovasi Desa Sesuai Kebutuhan",
+      "image": "skor-sdgs-9.jpg",
+      "score": 36.54
+    },
+    {
+      "goals": 10,
+      "title": "Desa Tanpa Kesenjangan",
+      "image": "skor-sdgs-10.jpg",
+      "score": 35.85
+    },
+    {
+      "goals": 11,
+      "title": "Kawasan Pemukiman Desa Aman dan Nyaman",
+      "image": "skor-sdgs-11.jpg",
+      "score": 42.06
+    },
+    {
+      "goals": 12,
+      "title": "Konsumsi dan Produksi Desa Sadar Lingkungan",
+      "image": "skor-sdgs-12.jpg",
+      "score": 0
+    },
+    {
+      "goals": 13,
+      "title": "Desa Tanggap Perubahan Iklim",
+      "image": "skor-sdgs-13.jpg",
+      "score": 0
+    },
+    {
+      "goals": 14,
+      "title": "Desa Peduli Lingkungan Laut",
+      "image": "skor-sdgs-14.jpg",
+      "score": 50
+    },
+    {
+      "goals": 15,
+      "title": "Desa Peduli Lingkungan Darat",
+      "image": "skor-sdgs-15.jpg",
+      "score": 4.17
+    },
+    {
+      "goals": 16,
+      "title": "Desa Damai Berkeadilan",
+      "image": "skor-sdgs-16.jpg",
+      "score": 78.41
+    },
+    {
+      "goals": 17,
+      "title": "Kemitraan Untuk Pembangunan Desa",
+      "image": "skor-sdgs-17.jpg",
+      "score": 80.02
+    },
+    {
+      "goals": 18,
+      "title": "Kelembagaan Desa Dinamis dan Budaya Desa Adaptif",
+      "image": "skor-sdgs-18.jpg",
+      "score": 57.12
+    }
+  ],
+  "total_desa": 1
+}
