@@ -1,17 +1,23 @@
 {
-  "dependencies": {
-    "express": "^4.21.2",
-    "index.js": "^0.0.3",
-    "touch": "^3.1.1"
-  },
   "name": "api-sdgs",
   "version": "1.0.0",
+  "description": "API Sustainable Development Goals - OpenDesa",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:scheduler": "node index-scheduler.js",
+    "dev": "node index-scheduler.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "sdgs",
+    "api",
+    "opendesa"
+  ],
+  "author": "OpenDesa",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3"
+  }
 }

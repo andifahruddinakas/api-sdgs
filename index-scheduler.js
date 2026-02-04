@@ -1,6 +1,8 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const { startScheduler } = require("./scheduler");
+
 const app = express();
 
 app.use(express.json());
@@ -11,6 +13,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // Menyediakan akses ke folder `public/img` untuk menampilkan gambar secara langsung
 app.use("/img", express.static(path.join(__dirname, "img")));
 
+// Root endpoint - melayani HTML
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
@@ -41,6 +44,7 @@ app.post("/api/trigger-generator", async (req, res) => {
   }
 });
 
+// API endpoint - mengambil data desa berdasarkan kode
 app.get("/api/:kodedesa", (req, res) => {
   const { kodedesa } = req.params;
   const filePath = path.join(__dirname, "public", "desa", `${kodedesa}.json`);
@@ -87,7 +91,26 @@ app.get("/api/:kodedesa", (req, res) => {
   });
 });
 
+// Health check endpoint
+app.get("/api/health", (req, res) => {
+  res.json({
+    status: 200,
+    message: "API is running",
+    timestamp: new Date().toISOString(),
+    scheduler: "enabled",
+  });
+});
+
 const PORT = process.env.PORT || 5000;
+
+// Start scheduler sebelum start server
+console.log("[STARTUP] Initializing API SDGs with Local Scheduler...\n");
+startScheduler();
+
+// Start server
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`[SERVER] 🌐 API Server is running on port ${PORT}`);
+  console.log(`[SERVER] 📍 Local: http://localhost:${PORT}`);
+  console.log(`[SERVER] 🏠 Homepage: http://localhost:${PORT}/`);
+  console.log(`[SERVER] 📚 API Docs: Check /api/[kode_desa] endpoint\n`);
 });
