@@ -17,7 +17,7 @@
   "author": "OpenDesa",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2",
+    "express": "^4.22.1",
     "node-cron": "^3.0.3"
   }
 }
